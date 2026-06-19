@@ -1,3 +1,5 @@
+import dotenv from "dotenv";
+dotenv.config();
 import { connectDB } from "./config/db.js";
 import ContactMessage from "./models/ContactMessage.js";
 import GalleryImage from "./models/GalleryImage.js";
@@ -72,7 +74,7 @@ async function seed() {
   alt: "Cafe facade"
 },
 {
-  category: "Nature",
+  category: "Exterior",
   title: "Nature Inspired Entrance",
   imageUrl: "/images/entrance.jpeg",
   alt: "Nature entrance"
@@ -84,13 +86,13 @@ async function seed() {
   alt: "Night ambience"
 },
 {
-  category: "Books",
+  category: "Interior",
   title: "Reading Corner",
   imageUrl: "/images/Books section.jpeg",
   alt: "Books section"
 },
 {
-  category: "Dining",
+  category: "Interior",
   title: "Cozy Private Lounge",
   imageUrl: "/images/dining.jpeg",
   alt: "Private dining"
@@ -102,7 +104,7 @@ async function seed() {
   alt: "Creative decor"
 },
 {
-  category: "Beauty",
+  category: "Ambience",
   title: "Soul Of Cafe",
   imageUrl: "/images/Soul of cafe.jpeg",
   alt: "Soul of cafe"
